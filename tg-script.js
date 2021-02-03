@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function () {
+function init() {
 	'use strict';
 	const channelId = 1436808299;
 	const triggerRegex = /\$([a-zA-Z0-9]+)/g;
@@ -110,4 +110,6 @@
 		toggleButt.textContent = "Enable trigger";
 		toggleButt.onclick = toggleTrigger;
 	}
-})();
+}
+
+setTimeout(init, 1000);

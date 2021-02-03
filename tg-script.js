@@ -40,8 +40,6 @@ function init() {
 		fetch('http://localhost:1337/tgmsg', {
 			method: 'POST',
 			body: coin
-		}).catch(e => {
-			toggleError();
 		});
 
 		toggleSuccess();

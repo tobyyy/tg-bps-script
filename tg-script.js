@@ -91,6 +91,8 @@
 		exclamationDiv.style.color = "green";
 		toggleButt.textContent = "Ack success";
 		toggleButt.onclick = resetState;
+
+		triggerRegex.lastIndex = 0;
 	}
 
 	function toggleError() {
@@ -98,6 +100,8 @@
 		exclamationDiv.style.color = "red";
 		toggleButt.textContent = "Clear error";
 		toggleButt.onclick = resetState;
+
+		triggerRegex.lastIndex = 0;
 	}
 
 	function resetState() {

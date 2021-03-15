@@ -137,10 +137,6 @@ const triggerRegex = /\$([a-zA-Z0-9]+)/g;
 let state = "idle";
 let observer;
 
-function trigger(coin) {
-
-}
-
 function handlePlainMessage(text) {
 	console.debug("Looking for coin in msg", text);
 
